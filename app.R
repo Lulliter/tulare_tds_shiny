@@ -1,4 +1,3 @@
-#
 # This is a Shiny web application. You can run the application by clicking
 # the 'Run App' button above.
 #
@@ -79,6 +78,15 @@ ui <- #fluidPage(
       
       # Show a plot of the generated distribution
      dashboardBody(
+       tags$head(
+         tags$style(HTML("
+                         blockquote {
+                         padding: 10px 20px;
+                         margin: 0 0 20px;
+                         font-size: 13px;
+                         border-left: 5px solid #eee;
+                         }
+                         "))),
        fluidRow(
          tabBox(width = 12, height = NULL,
            # title = "First tabBox",
@@ -101,13 +109,15 @@ ui <- #fluidPage(
                      downloadButton("download_all_data", "Download All Data"))
                )
              )
+           ),
+           tabPanel(title = "About", 
+                      includeMarkdown("about.md")
            )
          )
        )
      )
    )
-  
-  
+
 # Define server logic required to draw a histogram
 server <- function(input, output) {
   
@@ -156,7 +166,7 @@ server <- function(input, output) {
                   opacity = 1
         ) %>%
         
-        addProviderTiles(providers$Esri.WorldTerrain # override default map with ESRI world terrain map
+        addProviderTiles("CartoDB.Positron" #providers$Esri.WorldTerrain
                          
         ) #%>% 
         
