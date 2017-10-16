@@ -1,15 +1,7 @@
-# This is a Shiny web application. You can run the application by clicking
-# the 'Run App' button above.
-#
-# Find out more about building applications with Shiny here:
-#
-#    http://shiny.rstudio.com/
-#
 library(data.table)
 library(dplyr)
 library(sp)
 library(leaflet)
-#library(ggplot2)
 library(RColorBrewer)
 library(shiny)
 library(shinydashboard)
@@ -35,11 +27,9 @@ dat <- fread("dat_group.csv")
 
 # define colors and palette for leaflet
 co = c("blue","steelblue2","steelblue1","seashell1","orangered1","red3")
-hist(dat$Result)
-
 
 # Define UI for application that draws a histogram
-ui <- #fluidPage(
+ui <- 
   dashboardPage(
     dashboardHeader(title = "TDS in the Tulare Basin",
                     titleWidth = 300),
@@ -76,7 +66,7 @@ ui <- #fluidPage(
         #actionButton("update", label = "Update Map")
       ),
       
-      # Show a plot of the generated distribution
+     # Body
      dashboardBody(
        tags$head(
          tags$style(HTML("
@@ -89,9 +79,6 @@ ui <- #fluidPage(
                          "))),
        fluidRow(
          tabBox(width = 12, height = NULL,
-           # title = "First tabBox",
-           # The id lets us use input$tabset1 on the server to find the current tab
-           # id = "tabset1", height = "500px",
            tabPanel("Map", 
                     tags$style(type = "text/css", "#map {height: calc(100vh - 100px) !important;}"),
                     leafletOutput("map")),
@@ -99,7 +86,6 @@ ui <- #fluidPage(
              fluidRow(
                column(width = 12,
                  box(title = NULL, width = NULL,
-                     #tags$style(type = "text/css", "#map {height: calc(100vh - 80px) !important;}"),
                      DT::dataTableOutput("dt")
                      ),
                  box(title = "Download Data", width = NULL,
@@ -170,7 +156,7 @@ server <- function(input, output) {
                          
         ) #%>% 
         
-        #setView(lng = center_coords$lonCenter, lat = center_coords$latCenter, zoom = 8) # iteratively changed zoom until it centered on the data
+        #setView()
    })
    
    # Data Table
@@ -208,7 +194,5 @@ server <- function(input, output) {
    
 }
 
-
 # Run the application 
 shinyApp(ui = ui, server = server)
-

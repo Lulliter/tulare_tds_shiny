@@ -17,7 +17,7 @@ Data was scraped by [CV-SALTS](https://www.cvsalinity.org/) and [CDM Smith](http
 * [California Department of Water Resources](http://www.water.ca.gov/)
 * independent dairy farm monitoring wells
 
-Code for this project can be found in [this Github repository](https://github.com/RichPau/tulare_tds_shiny).
+Code for this project can be found in [this Github repository](https://github.com/richpauloo/tulare_tds_shiny).
 
 ***
 
