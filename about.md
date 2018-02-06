@@ -24,9 +24,15 @@ Code for this project can be found in [this Github repository](https://github.co
 ## Contact Information
 ![](profile_100.jpg) <br/> <br/>
 Rich Pauloo, PhD Candidate | University of California Davis <br/>
-[Github](http://github.com/richpauloo) | [Stack Overflow](https://stackoverflow.com/users/8367943/rich-pauloo) | [LinkedIn](https://www.linkedin.com/in/rpauloo)
+[Github](http://github.com/richpauloo) | [Website](https://richpauloo.github.io) | [LinkedIn](https://www.linkedin.com/in/rpauloo)
 
 For questions about this application, please email me at richpauloo@gmail.com.
+
+***
+
+## Acknowledgments
+I would like to thank CDM Smith for helping acquire this data. I am also grateful to [Matthew Leonawicz](https://leonawicz.github.io/), who makes beautiful shiny apps, and whose work inspired and guided the design of my own.
+
 
 ***
 
