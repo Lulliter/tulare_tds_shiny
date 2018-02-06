@@ -15,13 +15,13 @@ Data was scraped by [CV-SALTS](https://www.cvsalinity.org/) and [CDM Smith](http
 * independent dairy farm monitoring wells  
 
 
-***
+
 
 ## Acknowledgments
 I would like to thank CDM Smith for helping acquire this data. I am also grateful to [Matthew Leonawicz](https://leonawicz.github.io/), who makes beautiful shiny apps, and whose work inspired and guided the design of my own.  
 
 
-***
+
 
 ## Appendix
 
@@ -39,7 +39,7 @@ Wells from the USGS database contain explicit depth information and can be used 
 
 **Deep** wells (n = 616) have a mean depth of 653.81 ft. with a standard deviation of 483.69 ft.  
 
-***
+
 
 ## References
 
