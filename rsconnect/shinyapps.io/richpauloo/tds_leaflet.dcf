@@ -1,0 +1,12 @@
+name: tds_leaflet
+title: tds_leaflet
+username:
+account: richpauloo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 223093
+bundleId: 1209312
+url: https://richpauloo.shinyapps.io/tds_leaflet/
+when: 1517887913.11156
+asMultiple: FALSE
+asStatic: FALSE
